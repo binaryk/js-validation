@@ -77,6 +77,12 @@ var App;
                         _this.fields.push(obj);
                     }
                 };
+                this.addField = function (field) {
+                    _this.fields.push({
+                        name: field,
+                        rules: []
+                    });
+                };
                 this.addRules = function (field, rules) {
                     var obj = {}, inserted = false;
                     /*cautam daca nu exista deja acest camp*/
@@ -92,6 +98,19 @@ var App;
                         obj['rules'] = rules;
                         _this.fields.push(obj);
                     }
+                };
+                this.getJsonData = function () {
+                    var data = {};
+                    _this.fields.forEach(function (e, i) {
+                        data[e.name] = $('[name=' + e.name).val();
+                    });
+                    return data;
+                };
+                this.clearFields = function () {
+                    _this.fields.forEach(function (e, i) {
+                        $('[name=' + e.name).val('');
+                    });
+                    return true;
                 };
                 this.fields = [];
                 this.validator = new Validator();
