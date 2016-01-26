@@ -24,4 +24,4 @@ message: 'This field is require'
   
   ___
   This is the first version of library.
-  I will greatly develop, patience.
+  I will develop it more but have patience.
