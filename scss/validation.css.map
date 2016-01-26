@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAY;EACV,MAAM,EAAE,eAAe;EACvB,KAAK,EAAE,kBAAkB;EACzB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,IAAI",
+"sources": ["validation.scss"],
+"names": [],
+"file": "validation.css"
+}
